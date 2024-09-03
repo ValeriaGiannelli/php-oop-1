@@ -12,6 +12,6 @@ class Cast {
 
     // funzione per il nome completo dell'attore
     public function getFullName(){
-        return $this->name . '' . $this->surname;
+        return $this->name . ' ' . $this->surname;
     }
 }

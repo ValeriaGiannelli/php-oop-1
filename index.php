@@ -48,6 +48,18 @@ require_once __DIR__ . '/data/db.php';
                         </ul> 
                     </p>
 
+                    <p class="card-text">
+                        Cast: 
+                        <ul>
+                            <?php foreach($movie->cast as $actor):?>
+                                <li>
+                                    <?php echo $actor->getFullName() ?>
+                                </li>
+                            <?php endforeach;?>
+                        
+                        </ul> 
+                    </p>
+
                     <!-- descrizione con metodo -->
                     <p class="card-text">
                         Descrizione: <?php $movie->printFullDescription() ?>
