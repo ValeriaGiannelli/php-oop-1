@@ -8,15 +8,15 @@ class Movie {
     public $genres = [];
 
     // questa potrebbe essere una composizione
-    public $cast = [];
+    public $actors = [];
 
     // costruttore
-    public function __construct($_title, $_year, $_duration, $_genre, $_cast){
+    public function __construct($_title, $_year, $_duration, $_genre, array $_actor){
         $this -> title = $_title;
         $this -> year = $_year;
         $this -> duration = $_duration;
         $this -> genres = $_genre;
-        $this -> cast = $_cast;
+        $this -> actors = $_actor;
     }
 
     // funzione

@@ -1,7 +1,7 @@
 <?php
 // importo i due file php con classe e db
 require_once __DIR__ . '/Model/Movie.php';
-require_once __DIR__ . '/Model/Cast.php';
+require_once __DIR__ . '/Model/Actor.php';
 require_once __DIR__ . '/data/db.php';
 ?>
 
@@ -51,7 +51,7 @@ require_once __DIR__ . '/data/db.php';
                     <p class="card-text">
                         Cast: 
                         <ul>
-                            <?php foreach($movie->cast as $actor):?>
+                            <?php foreach($movie->actors as $actor):?>
                                 <li>
                                     <?php echo $actor->getFullName() ?>
                                 </li>
