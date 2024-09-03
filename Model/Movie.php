@@ -20,7 +20,7 @@ class Movie {
 
     // funzione
 
-    public function getFullDescription(){
-        return "{$this -> title} è un film del {$this -> year} della durata di {$this -> duration}min.";
+    public function printFullDescription(){
+        echo "{$this -> title} è un film del {$this -> year} della durata di {$this -> duration} min.";
     }
 }
