@@ -19,19 +19,44 @@ require_once __DIR__ . '/data/db.php';
 <body>
     <!-- stampo in pagina le informazioni dei movie -->
     <div class="d-flex">
-
+        <?php foreach($movies as $movie): ?>
             <div class="card" style="width: 18rem;">
                 <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <div class="card-body">
-                    <h5 class="card-title">Titolo del film</h5>
-                    <p class="card-text">anno</p>
-                    <p class="card-text">durata</p>
-                    <p class="card-text">Descrizione completa</p>
+                    <!-- titolo film -->
+                    <h5 class="card-title">
+                        Titolo: <?php echo $movie->title ?>
+                    </h5>
+
+                    <!-- anno -->
+                    <p class="card-text">
+                        Anno: <?php echo $movie->year ?>
+                    </p>
+
+                    <!-- durata -->
+                    <p class="card-text">
+                        Durata: <?php echo $movie->duration?> min.
+                    </p>
+
+                    <!-- generi con ciclo foreach -->
+                    <p class="card-text">
+                        Genere: 
+                        <ul>
+                            <?php foreach($movie->genres as $genre): ?>
+                                <li><?php echo $genre ?></li>
+                            <?php endforeach;?>
+                        </ul> 
+                    </p>
+
+                    <!-- descrizione con metodo -->
+                    <p class="card-text">
+                        Descrizione: <?php $movie->printFullDescription() ?>
+                    </p>
                     
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-
+        <?php endforeach; ?>
     </div>
 
 </body>
