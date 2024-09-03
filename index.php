@@ -21,7 +21,6 @@ require_once __DIR__ . '/data/db.php';
     <div class="d-flex">
         <?php foreach($movies as $movie): ?>
             <div class="card" style="width: 18rem;">
-                <!-- <img src="..." class="card-img-top" alt="..."> -->
                 <div class="card-body">
                     <!-- titolo film -->
                     <h5 class="card-title">
