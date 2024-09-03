@@ -12,9 +12,15 @@ class Movie {
 
     // costruttore
     public function __construct($_title, $_year, $_duration, $_genre){
-        $this -> title = $title;
-        $this -> year = $year;
-        $this -> duration = $duration;
-        $this -> genre = $genres;
+        $this -> title = $_title;
+        $this -> year = $_year;
+        $this -> duration = $_duration;
+        $this -> genres = $_genre;
+    }
+
+    // funzione
+
+    public function getFullDescription(){
+        return "{$this -> title} è un film del {$this -> year} della durata di {$this -> duration}min.";
     }
 }
