@@ -1,6 +1,7 @@
 <?php
 // importo Movie.php
 require_once __DIR__ . '/../Model/Movie.php';
+require_once __DIR__ . '/../Model/Cast.php';
 // qui creao eventuale database per inserire le istanze della classe Movie
 
 $movies = [

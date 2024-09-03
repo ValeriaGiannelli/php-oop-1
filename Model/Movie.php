@@ -11,11 +11,12 @@ class Movie {
     public $cast;
 
     // costruttore
-    public function __construct($_title, $_year, $_duration, $_genre){
+    public function __construct($_title, $_year, $_duration, $_genre, Cast $_cast){
         $this -> title = $_title;
         $this -> year = $_year;
         $this -> duration = $_duration;
         $this -> genres = $_genre;
+        $this -> cast = $_cast;
     }
 
     // funzione

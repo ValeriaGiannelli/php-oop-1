@@ -1,6 +1,7 @@
 <?php
 // importo i due file php con classe e db
 require_once __DIR__ . '/Model/Movie.php';
+require_once __DIR__ . '/Model/Cast.php';
 require_once __DIR__ . '/data/db.php';
 ?>
 
